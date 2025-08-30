@@ -1,15 +1,15 @@
 # QUESTION 6 :- Find the Second Largest Element in a list.
 
-list = list(map(int,input("Enter elements of list: ").split()))
+l = list(map(int,input("Enter elements of list: ").split()))
 
 largest = slargest = float('-inf')
 
 for i in range(len(list)):
-    if list[i] > largest:
+    if l[i] > largest:
         slargest = largest
-        largest = list[i]
-    elif list[i] > slargest and list[i] != largest:
-        second = list[i]
+        largest = l[i]
+    elif l[i] > slargest and l[i] != largest:
+        second = l[i]
 
 if slargest == float('-inf'):
     print("No second largest element (all elements may be same).")

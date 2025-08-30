@@ -1,9 +1,9 @@
 # QUESTION 7 :- Remove Duplicates from a list Without Using set().
 
-list = list(map(int,input("Enter elements of list: ").split()))
+l = list(map(int,input("Enter elements of list: ").split()))
 unique = []
 
-for i in (list):
+for i in (l):
     if i not in unique:
         unique.append(i)
 

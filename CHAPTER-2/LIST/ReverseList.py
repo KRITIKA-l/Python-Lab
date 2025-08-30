@@ -1,8 +1,8 @@
 # QUESTION 5 :- Reverse a list without using reverse() function or slicing [::-1].
 
-list = input("Enter elemensts of list: ").split()
+l = input("Enter elemensts of list: ").split()
 
-for i in range(len(list)//2):
-    list[i], list[-i-1] = list[-i-1], list[i]
+for i in range(len(l)//2):
+    l[i], l[-i-1] = l[-i-1], l[i]
     
-print("Reversed List :",list)   
+print("Reversed List :",l)   
