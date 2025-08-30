@@ -4,12 +4,12 @@ l = list(map(int,input("Enter elements of list: ").split()))
 
 largest = slargest = float('-inf')
 
-for i in range(len(list)):
+for i in range(len(l)):
     if l[i] > largest:
         slargest = largest
         largest = l[i]
     elif l[i] > slargest and l[i] != largest:
-        second = l[i]
+        slargest = l[i]
 
 if slargest == float('-inf'):
     print("No second largest element (all elements may be same).")

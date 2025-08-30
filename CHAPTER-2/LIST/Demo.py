@@ -12,7 +12,7 @@ print("Ascending order:", ascending)
 print("Descending order:", descending)
 
 bool_list = list(map(int, input("Enter boolean values (0 or 1) : ").split()))
-bool_list = [bool(x) for x in bool_list]  
+bool_list = [bool(x) for x in bool_list] 
 
 print("Boolean list:", bool_list)
 print("any() →", any(bool_list))
